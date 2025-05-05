@@ -1,0 +1,1 @@
+# YandexSamokat_SQL_Autotest
