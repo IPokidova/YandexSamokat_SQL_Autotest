@@ -1,0 +1,5 @@
+SELECT c.login, COUNT(o.track) AS orders_count
+FROM "Couriers" AS c
+INNER JOIN "Orders" AS o ON c.id = o."courierId"
+GROUP BY c.login
+HAVING o."inDelivery" = true;
